@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="site by hamoudi lahouassa">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title -->
+    <title>Siraj</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="./img/jazira2.png">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Experiences */
+        ul.experiences {
+            padding-left: 15px;
+            margin-top: -1px;
+        }
+
+        ul.experiences li {
+            padding-left: 33px;
+            margin-bottom: 2.5em;
+            list-style: none;
+            background: url('../img/misc/list-bullet-darkgray.png') no-repeat;
+            padding: 10px;
+            border-radius: 20px;
+        }
+
+        ul.experiences li:hover {
+            -webkit-box-shadow: 5px -1px 50px -6px #bfbfbf;
+            box-shadow: 5px -1px 50px -6px #bfbfbf;
+            border-bottom: 10px solid #9200fa;
+            transition: all 0.5s;
+            cursor: pointer;
+            transform: scale(1.01);
+        }
+
+        ul.experiences li.green {
+            background: url('../img/misc/list-bullet-green.png') no-repeat;
+        }
+
+        ul.experiences li.blue {
+            background: url('../img/misc/list-bullet-blue.png') no-repeat;
+        }
+
+        ul.experiences li.pink {
+            background: url('../img/misc/list-bullet-pink.png') no-repeat;
+        }
+
+        .where {
+            font-size: 1.2857em;
+            /* 18/16 -> 18px */
+            font-weight: 300;
+            display: inline;
+            margin-right: 0.5em;
+        }
+
+        .what {
+            font-size: 0.75em;
+            /* 12/16 -> 12px */
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #fff;
+            background-color: #444444;
+            display: inline-block;
+            padding: 0 12px;
+            margin: -5px 0.5em 0 0 !important;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+        }
+
+        .what.green {
+            background-color: #9929ea;
+        }
+
+        .what.blue {
+            background-color: #6dcff6;
+        }
+
+        .what.pink {
+            background-color: #f06eaa;
+        }
+
+        .when {
+            float: right;
+            color: #b9b9b9;
+            font-style: italic;
+        }
+
+        .description {
+            display: block;
+            margin-top: 0.5em;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <!-- /Preloader -->
+
+    <!-- Header Area Start -->
+    <!-- Header Area Start -->
+    <header class="header-area">
+        <!-- Search Form -->
+        <div class="search-form d-flex align-items-center">
+            <div class="container">
+                <form action="index.html" method="get">
+                    <input type="search" name="search-form-input" id="searchFormInput"
+                        placeholder="Type your keyword ..." />
+                    <button type="submit"><i class="icon_search"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Top Header Area Start -->
+        <div class="top-header-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="top-header-content">
+
+                            <span><img src="img/white-logo.svg" style="width: 40px" /> </span></a>
+                            <a href="#"><i class="icon_mail"></i>
+                                <span>support@siraj-dev.com</span></a>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="top-header-content">
+                            <!-- Top Social Area -->
+                            <div class="top-social-area ml-auto">
+                                <a href="https://www.facebook.com/hamoudi.lahouassa"><i class="fa fa-facebook"
+                                        aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Top Header Area End -->
+
+        <!-- Main Header Start -->
+        <div class="main-header-area">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Classy Menu -->
+                    <nav class="classy-navbar justify-content-between" id="robertoNav">
+                        <!-- Logo -->
+                        <a class="nav-brand" href="index.html"><img src="./img/logo.svg" style="width: 80px"
+                                alt="" /></a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+                            <!-- Menu Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap">
+                                    <span class="top"></span><span class="bottom"></span>
+                                </div>
+                            </div>
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul id="nav">
+                                    <li class="active"><a href="./index.html">Acceuil</a></li>
+                                    <li><a href="index.html">A propos</a></li>
+                                    <li><a href="index.html#services">Nos Service</a></li>
+                                    <li><a href="index.html#produits">Nos Produits</a></li>
+                                    <li><a href="index.html#clients">Nos Clients</a></li>
+                                </ul>
+
+                                <div class="book-now-btn ml-3 ml-lg-5">
+                                    <a href="index.html#contact">Contactez-Nous
+                                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Area End -->
+
+    <!-- Breadcrumb Area Start -->
+    <div class="breadcrumb-area  jarallax bgorange">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <div class="breadcrumb-content text-center">
+                        <h2 class="page-title">SellSabeel Distribution</h2>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb justify-content-center">
+                                <li class="breadcrumb-item"><a href="index.html">Siraj</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Sellsabeel</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb Area End -->
+
+    <!-- About Us Area Start -->
+    <section class="roberto-about-us-area section-padding-100-0">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-6">
+                    <div class="about-thumbnail pr-lg-5 mb-100 wow fadeInUp" data-wow-delay="100ms">
+                        <img src="img/SELLSABEEL-Dis.png" alt="">
+                    </div>
+                </div>
+                <div class=" col-12 col-lg-6">
+                    <!-- Section Heading -->
+                    <div class="section-heading wow fadeInUp" data-wow-delay="300ms">
+                        <h6 class="clorange">SellSabeel </h6>
+                        <h2>Distribution</h2>
+                    </div>
+                    <div class="about-content mb-100 wow fadeInUp" data-wow-delay="500ms">
+                        <p>Il s'agit d'une solution de force de vente mobile SAAS cloud qui supporte les deux modèles,
+                            cash VAN et pré-commande ainsi que la géo-localisation des clients et des visites effectuées
+                            par les délégués commerciaux. Et plein d'autres fonctionnalités parmi eux
+                        </p>
+
+                        <img src="img/SELLSABEEL.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Us Area End -->
+
+    <!-- Video Area Start -->
+    <div class="roberto--video--area  jarallax section-padding-0-100 bgorange">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center justify-content-center">
+                <div class="col-12 col-md-6">
+                    <!-- Section Heading -->
+                    <div class="section-heading text-center white wow fadeInUp" data-wow-delay="100ms">
+                        <h6>SellSabeel Distribution</h6>
+                        <h2>Video Description</h2>
+                    </div>
+                    <div class="video-content-area mt-100 wow fadeInUp" data-wow-delay="500ms">
+                        <a href="https://www.youtube.com/watch?v=Ldd8yjjo6jA" class="video-play-btn"><i
+                                class="fa fa-play"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Area End -->
+
+    <div class="container mt-100">
+        <h4 class="mb-100">Suivi des articles en utilisant le code IMEI ou SN, pour une traçabilité parfaite du
+            fournisseur/fabricant
+            du produit au client final
+        </h4>
+        <ul class="experiences mt-100">
+
+            <!-- Experience -->
+            <li class="green">
+                <div class="where">SellSabeel</div>
+                <h3 class="what green">Distribution</h3>
+                <div class="when">Siraj</div>
+
+                <p class="description">Inventaire d’articles avec l’IMEI, code-barres ou numéro de série selon le type
+                    d’article</p>
+            </li>
+            <li class="green">
+                <div class="where">SellSabeel</div>
+                <h3 class="what green">Distribution</h3>
+                <div class="when">Siraj</div>
+
+                <p class="description">Créer une base de données géographique pour les clients</p>
+            </li>
+            <li class="green">
+                <div class="where">SellSabeel</div>
+                <h3 class="what green">Distribution</h3>
+                <div class="when">Siraj</div>
+
+                <p class="description">Connaître le stock dans les différents magasins en temps réel</p>
+            </li>
+            <li class="green">
+                <div class="where">SellSabeel</div>
+                <h3 class="what green">Distribution</h3>
+                <div class="when">Siraj</div>
+
+                <p class="description">Gérer la réparation des articles (SAV) et la possibilité de suivre le statut par
+                    les clients directement en ligne</p>
+            </li>
+            <li class="green">
+                <div class="where">SellSabeel</div>
+                <h3 class="what green">Distribution</h3>
+                <div class="when">Siraj</div>
+
+                <p class="description">Traiter chaque représentant commercial dans sa voiture comme un magasin mobile
+                    auquel les articles sont fournis et suivis. Et en plus, la possibilité d'inventorier ce
+                    magasin et de suivre toutes ses ventes en temps réel
+                </p>
+            </li>
+
+
+
+            <li class="green">
+                <div class="where">SellSabeel</div>
+                <h3 class="what green">Distribution</h3>
+                <div class="when">Siraj</div>
+
+                <p class="description">Mise en relation des représentants avec un certain nombre de clients (selon le
+                    secteur d’activité)</p>
+            </li>
+            <li class="green">
+                <div class="where">SellSabeel</div>
+                <h3 class="what green">Distribution</h3>
+                <div class="when">Siraj</div>
+
+                <p class="description">Concevoir des itinéraires quotidiens, hebdomadaires ou mensuels pour les délégués
+                </p>
+            </li>
+            <li class="green">
+                <div class="where">SellSabeel</div>
+                <h3 class="what green">Distribution</h3>
+                <div class="when">Siraj</div>
+
+                <p class="description">Gardez une trace des visites des délégués via des cartes interactives</p>
+            </li>
+            <li class="green">
+                <div class="where">SellSabeel</div>
+                <h3 class="what green">Distribution</h3>
+                <div class="when">Siraj</div>
+
+                <p class="description">Utilisez l'appareil photo du téléphone pour lire directement les code-barres sans
+                    besoin de lecteurs
+                    spécifiques</p>
+            </li>
+            <li class="green">
+                <div class="where">SellSabeel</div>
+                <h3 class="what green">Distribution</h3>
+                <div class="when">Siraj</div>
+
+                <p class="description">Module de commande en ligne accessible pour les clients</p>
+            </li>
+
+            <li class="green">
+                <div class="where">SellSabeel</div>
+                <h3 class="what green">Distribution</h3>
+                <div class="when">Siraj</div>
+
+                <p class="description">Gérer le transfert des fonds des vendeurs vers les caisses et entre les caisses
+                    et les comptes bancaires</p>
+            </li>
+            <li class="green">
+                <div class="where">SellSabeel</div>
+                <h3 class="what green">Distribution</h3>
+                <div class="when">Siraj</div>
+
+                <p class="description">Gestion des caisses et des comptes bancaires</p>
+            </li>
+            <li class="green">
+                <div class="where">SellSabeel</div>
+                <h3 class="what green">Distribution</h3>
+                <div class="when">Siraj</div>
+
+                <p class="description">Gestion des chèques bancaires</p>
+            </li>
+            <li class="green">
+                <div class="where">SellSabeel</div>
+                <h3 class="what green">Distribution</h3>
+                <div class="when">Siraj</div>
+
+                <p class="description">Personnaliser les comptes par des autorisations</p>
+            </li>
+            <li class="green">
+                <div class="where">SellSabeel</div>
+                <h3 class="what green">Distribution</h3>
+                <div class="when">Siraj</div>
+
+                <p class="description">Afficher des rapports et des graphiques pour faciliter et accélérer la prise de
+                    décision</p>
+            </li>
+
+        </ul>
+
+    </div>
+    <!-- Service Area Start -->
+    <!-- <section class="roberto-service-area section-padding-100-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+               
+                    <div class="section-heading text-center wow fadeInUp" data-wow-delay="100ms">
+                        <h6 class="clorange">Ultimate Solutions</h6>
+                        <h2>Our Hotel &amp; Room</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+            
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-service-area mb-100 wow fadeInUp" data-wow-delay="300ms">
+                        <img src="img/bg-img/21.jpg" alt="">
+                        <div class="service-title d-flex align-items-center justify-content-center">
+                            <h5>Restaurant &amp; Bar</h5>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-service-area mb-100 wow fadeInUp" data-wow-delay="500ms">
+                        <img src="img/bg-img/22.jpg" alt="">
+                        <div class="service-title d-flex align-items-center justify-content-center">
+                            <h5>Spa &amp; Fitness</h5>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-service-area mb-100 wow fadeInUp" data-wow-delay="700ms">
+                        <img src="img/bg-img/23.jpg" alt="">
+                        <div class="service-title d-flex align-items-center justify-content-center">
+                            <h5>Pool &amp; Party</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- Service Area End -->
+
+    <!-- Call To Action Area Start -->
+    <section class="roberto-cta-area">
+        <div class="container">
+            <div class="cta-content bg-img bg-overlay jarallax" style="background-image: url(img/bg-img/1.jpg)">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-7">
+                        <div class="cta-text mb-50">
+                            <h2>Contactez-Nous Maintenant</h2>
+                            <h6>
+                                Contact (+213) 664035598 pour commander votre produit
+                            </h6>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5 text-right">
+                        <a href="index.html#contact" class="btn roberto-btn mb-50">Contact Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Call To Action Area End -->
+
+
+    <!-- Partner Area End -->
+
+    <!-- Footer Area Start -->
+    <footer class="footer-area section-padding-80-0">
+        <!-- Main Footer Area -->
+        <div class="main-footer-area">
+            <div class="container">
+                <div class="row align-items-baseline justify-content-between">
+                    <!-- Single Footer Widget Area -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget mb-80">
+                            <!-- Footer Logo -->
+                            <a href="index.html" class="footer-logo"><img src="img/white-logo.svg" alt="" /></a>
+
+
+                        </div>
+                    </div>
+
+                    <!-- Single Footer Widget Area -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget mb-80">
+                            <!-- Widget Title -->
+                            <h5 class="widget-title">Contactez-Nous</h5>
+                            <!-- Single Blog Area -->
+                            <div class="latest-blog-area">
+                                <a href="#" class="post-title">+213 664035598</a>
+                            </div>
+                            <div class="latest-blog-area">
+                                <a href="#" class="post-title">support@siraj-dev.com</a>
+                            </div>
+                            <div class="latest-blog-area">
+                                <a href="index.html#contact" class="post-title">Contactez-Nous</a>
+                            </div>
+                            <!-- Single Blog Area -->
+
+                        </div>
+                    </div>
+
+                    <!-- Single Footer Widget Area -->
+                    <div class="col-12 col-sm-4 col-lg-2">
+                        <div class="single-footer-widget mb-80">
+                            <!-- Widget Title -->
+                            <h5 class="widget-title">Liens</h5>
+
+                            <!-- Footer Nav -->
+                            <ul class="footer-nav">
+                                <li>
+                                    <a href="index.html#propos"><i class="fa fa-caret-right" aria-hidden="true"></i>
+                                        A Propos</a>
+                                </li>
+                                <li>
+                                    <a href="index.html#services"><i class="fa fa-caret-right" aria-hidden="true"></i>
+                                        Nos Services</a>
+                                </li>
+                                <li>
+                                    <a href="index.html#produits"><i class="fa fa-caret-right" aria-hidden="true"></i>
+                                        Nos Produits</a>
+                                </li>
+                                <li>
+                                    <a href="index.html#clients"><i class="fa fa-caret-right" aria-hidden="true"></i>
+                                        Nos Clients</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Single Footer Widget Area -->
+                    <div class="col-12 col-sm-8 col-lg-4">
+                        <div class="single-footer-widget mb-80">
+                            <!-- Widget Title -->
+                            <h5 class="widget-title">Suivez Nous</h5>
+                            <span>pour recevoir une notification sur les nouveaux
+                                mises à jour.</span>
+
+                            <!-- Newsletter Form -->
+                            <form action="index.html" class="nl-form">
+                                <input type="email" class="form-control" placeholder="Entrer votre  email..." />
+                                <button type="submit">
+                                    <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copywrite Area -->
+        <div class="container">
+            <div class="copywrite-content">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-8">
+                        <!-- Copywrite Text -->
+                        <div class="copywrite-text">
+                            <p>
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                Copyright &copy;
+                                <script>
+                                    document.write(new Date().getFullYear());
+                                </script>
+                                All rights reserved | This website is made with
+                                <i class="fa fa-heart-o" aria-hidden="true"></i> by
+                                <a href="#" target="_blank">Siraj</a>
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <!-- Social Info -->
+                        <div class="social-info">
+                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Area End -->
+
+    <!-- **** All JS Files ***** -->
+    <!-- jQuery 2.2.4 -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Popper -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- All Plugins -->
+    <script src="js/roberto.bundle.js"></script>
+    <!-- Active -->
+    <script src="js/default-assets/active.js"></script>
+
+</body>
+
+</html>
