@@ -3415,9 +3415,11 @@ html .ui-button.ui-state-disabled:active {
   width: 100%;
   height: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color:#fff ;
+  color: #9200fa !important;
   position: absolute;
   transform-origin: 0% 0%;
   border-bottom: 1px dashed #9200fa;
@@ -3444,7 +3446,7 @@ html .ui-button.ui-state-disabled:active {
 
 }
 .sidmrf>img{
-  width: 100px;
+  width: 80px;
 }
 .mrf >img{
   width: 80px;
@@ -3456,4 +3458,12 @@ html .ui-button.ui-state-disabled:active {
 }
 .mrf >h4{
   color: white !important;
+}
+.sidmrf >h6
+{
+  color: #9200fa !important;
+  border-bottom: 1px solid #9200fa;
+}
+.sidmrf >h4{
+  color: #9200fa !important;
 }
