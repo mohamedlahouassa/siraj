@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input id="codebare" type="text" placeholder="Barcode" onkeypress="mycv()">
+    <!-- <input id="validcodebar" type="button" value="valider" onclick="valid()"> -->
+    <Button id="validcodebar" onclick="valid()">
+        Validerddd
+    </Button>
+
+
+
+    <Button onclick="scan()">
+        Scan
+    </Button>
+    <ul id="mylist">
+
+    </ul>
+    <script type='text/javascript'>
+
+        let list = document.getElementById("mylist");
+
+        let mylist = [];
+        function mycv() {
+            console.log("hello");
+            alert("hello")
+        }
+        var tec = document.getElementById("codebare");
+        tec.onkeypress = function (e) {
+            console.log(e)
+            var key = e.charCode || e.keyCode || 0;
+            if (key == 13) {
+                e.preventDefault();
+                valid();
+            }
+        }
+
+
+
+        function scan() {
+
+            Print.postMessage('Hello World being called from Javascript code');
+        }
+        function valid() {
+            var codebar = document.getElementById("codebare");
+
+            var codebarvalue = codebar.value;
+            var found = false;
+            for (var i = 0; i < mylist.length; i++) {
+                if (mylist[i].name == codebarvalue) {
+                    mylist[i].quantity++;
+                    found = true;
+                    break;
+                }
+            }
+            if (!found) {
+                mylist.push({ name: codebarvalue, quantity: 1 });
+            }
+            run();
+
+        }
+        function run() {
+            //generate list from my list 
+            list.innerHTML = "";
+            for (var i = 0; i < mylist.length; i++) {
+                var li = document.createElement("li");
+                li.appendChild(document.createTextNode(mylist[i].name + "  x  " + mylist[i].quantity));
+                list.appendChild(li);
+            }
+        }
+
+
+    </script>
+
+</body>
+
+</html>
